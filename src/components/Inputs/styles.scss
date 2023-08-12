@@ -1,0 +1,44 @@
+@import 'src/styles/themes/globalTheme.scss';
+
+.DefaultInput input {
+    width: 100%;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100px;
+
+    .Input {
+        width: 100%;
+        height: 100%;
+        margin-top: 7px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: #f3f3f4;
+        appearance: none;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $fracoBlue;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $fracoBlue;
+    border-radius: 10px;
+}

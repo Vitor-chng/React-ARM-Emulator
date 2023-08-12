@@ -1,0 +1,69 @@
+@import 'src/styles/themes/globalTheme.scss';
+
+@keyframes animateFilter {
+    0% {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.TableConteiner {
+    width: 100%;
+    margin-top: 20px;
+    color: $fracoGreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Table {
+        width: 100%;
+        color: $black;
+        border-width: 1px;
+        border-color: $fracoGreen;
+        border-style: solid;
+        border-radius: 7px;
+
+        .TableRow {
+            background-color: $yellowishWhite;
+
+            .TableCell {
+
+                .TableCellContent {
+                    margin: 3px;
+                }
+
+            }
+        }
+    }
+
+    .PageSelector {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 3px;
+        color: $fracoGreen;
+    }
+}
+
+.CellFilter {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-right: 10px;
+
+    .FilterInput {
+        animation-name: animateFilter;
+        animation-duration: 0.3s;
+    }
+}
