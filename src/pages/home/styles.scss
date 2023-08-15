@@ -3,8 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(231,255,234);
+    background: linear-gradient(337deg, rgba(231,255,234,0) 0%, rgba(217,252,255,0.13629201680672265) 100%);
     .IntructionInput {
         width: 80%;
+    }
+    .Grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
     }
     .Tables{
         display: flex;

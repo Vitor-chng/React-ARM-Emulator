@@ -11,6 +11,7 @@ export interface TableDict {
     [key: number]: number | string | JSX.Element
 }
 
+// Not Used
 // Instruction types:
 
 // discriminator = 0

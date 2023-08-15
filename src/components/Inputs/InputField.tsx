@@ -13,12 +13,13 @@ const InputField: React.FC<Props> = ({ input, setInput }) => {
 
     return (
         <div className='InputContainer'>
-            <input
-                value={input}
-                type={"text"}
-                className='Input'
-                placeholder='Istructions Field'
-                onChange={(e) => setInput(e.target.value)}
+            <textarea
+            value={input}
+            className='Input'
+            placeholder='Istructions Field'
+            onChange={(e) => setInput(e.target.value)}
+            rows={5}
+            cols={5}
             />
         </div>
     );
