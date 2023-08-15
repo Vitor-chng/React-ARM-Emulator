@@ -33,7 +33,7 @@ export class ProcessingService {
         // gt Z clear AND (N equals V)
       }
       console.log(allInsttruc)
-      console.log(r)
+      console.log(r[15]/4)
 
       if(allInsttruc[r[15]/4][0] == 'ADD'){
         z=Number(allInsttruc[r[15]/4][1].replace('R',''))
@@ -229,6 +229,7 @@ export class ProcessingService {
         z=Number(allInsttruc[r[15]/4][1])
         
         r[15]=z-4
+        console.log(r[15])
       }else
 
       if(allInsttruc[r[15]/4][0] == 'BNE'){

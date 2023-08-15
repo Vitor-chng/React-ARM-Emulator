@@ -122,7 +122,7 @@ const Home: React.FC = () => {
         ])
         setReg([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
         // setInstructions([])
-
+        setState(!state)
         handleSetInput()
     }
 
@@ -226,7 +226,7 @@ const Home: React.FC = () => {
                         }} />
                     <Button text='Run 1' submit={true} onClick={runOne} style={{
                         width: '200px', backgroundColor: colors.fracoGreen,
-                        borderBottomLeftRadius: 0, borderTopLeftRadius: 0, borderBottomRightRadius: 0, borderTopRightRadius: 0
+                        borderBottomLeftRadius: 0, borderTopLeftRadius: 0
                     }} />
                     {/* <Button text='Run 1Hz' submit={true} onClick={runTimed} style={{
                         width: '200px', backgroundColor: colors.forteGreen,
@@ -235,10 +235,10 @@ const Home: React.FC = () => {
                 </div>
                 <div>
                     <Button text='Show Color Grid' submit={false} onClick={showGrid} style={{
-                        width: '200px', backgroundColor: colors.forteGreen,
+                        width: '200px', backgroundColor: colors.forteGreen,borderBottomRightRadius: 0, borderTopRightRadius: 0
                     }} />
                     <Button text='Reset Memory' submit={false} onClick={ZeroMem} style={{
-                        width: '200px', backgroundColor: colors.fracoBlue,
+                        width: '200px', backgroundColor: colors.fracoBlue,borderBottomLeftRadius: 0, borderTopLeftRadius: 0
                     }} />
                 </div>
                 { show ? 
