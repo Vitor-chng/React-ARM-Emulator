@@ -5,6 +5,15 @@
     align-items: center;
     background: rgb(231,255,234);
     background: linear-gradient(337deg, rgba(231,255,234,0) 0%, rgba(217,252,255,0.13629201680672265) 100%);
+    
+    .Title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: pre-line;
+        font-size: 1em;
+    }
+    
     .IntructionInput {
         width: 80%;
     }
@@ -21,3 +30,4 @@
         align-items: flex-start;
     }
 }
+

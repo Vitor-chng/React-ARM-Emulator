@@ -3,7 +3,9 @@ import Button from '../../components/Buttons/LargeButton/Button';
 import Table from '../../components/Tables/Table';
 import InputField from '../../components/Inputs/InputField';
 import { IIBranchExchange, IInstructionFormat, TableDict } from '../../interfaces/Interfaces';
-
+import { IconContext } from "react-icons";
+import { FaInfoCircle } from "react-icons/fa";
+import { Tooltip } from 'react-tooltip';
 import { theme } from '../../styles/ColorTheme';
 
 
@@ -59,22 +61,21 @@ const Home: React.FC = () => {
     (Rz is the target)
     ADD Rz, Rx, Ry/Op
     ADDS Rz, Rx, Ry/Op
-
+    
     SUB Rz, Rx, Ry/Op
     SUBS Rz, Rx, Ry/Op
-
+    
     MOV Rz, Ry/Op
-
     AND Rz, Rx, Ry/Op
-
+    
     ORR Rz, Rx, Ry/Op
-
+    
     CMP Rz, Rx, Ry/Op
-
+    
     LDR Rz, Rx
-
+    
     STR Rz, Rx
-
+    
     B Op 
     BNE Op 
     BEQ Op 
@@ -128,7 +129,7 @@ const Home: React.FC = () => {
 
     const ZeroMem = () => {
         setMem([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0])
-        handleSetInput()
+        setState(!state)
     }
 
 
@@ -209,9 +210,15 @@ const Home: React.FC = () => {
     const CPU = () => {
         return (
             <div className='Container'>
-                <h1>
-                    Emulador ARM (simples)
-                </h1>
+                <div className='Title'>
+                    <h1>
+                        Emulador ARM (simples)
+                    </h1>
+                    <IconContext.Provider value={{ color: colors.forteBlue, size: '1.5em' }}>
+                        <FaInfoCircle data-tooltip-id='tooltip' data-tooltip-content={isa}  data-tooltip-float="true" data-html="true"/>
+                    </IconContext.Provider>
+                    <Tooltip id='tooltip' />
+                </div>
                 <div className='IntructionInput'>
                     <InputField
                         input={input}
