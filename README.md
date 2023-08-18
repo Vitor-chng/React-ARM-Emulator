@@ -51,6 +51,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Members:
+###
+Vitor Chinaglia- 11912363
 
-Vitor Chinaglia 11912363
-Patrick Marques
+Patrick Marques- 11257550
